@@ -8,7 +8,7 @@ public class Ex01KadaneAlgo {
        int maxSum = a[0];
        int currentSum = a[0];
        for(int i = 1;i<n;i++){
-           currentSum = currentSum+a[i]>currentSum?currentSum+a[i]:a[i];
+           currentSum = currentSum+a[i]>a[i]?currentSum+a[i]:a[i];
            maxSum = currentSum>maxSum?currentSum:maxSum;
        }
        return maxSum;
