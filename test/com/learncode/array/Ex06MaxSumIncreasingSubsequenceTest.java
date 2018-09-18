@@ -9,6 +9,7 @@ class Ex06MaxSumIncreasingSubsequenceTest {
     @Test
     void getMaxSum() {
         int a[] = {1, 101, 2, 3, 100, 4, 5};
-        assertEquals(106, new Ex06MaxSumIncreasingSubsequence().getMaxSum(a, 7));
+        int[] b  = {10, 5, 4, 3};
+        assertEquals(10, new Ex06MaxSumIncreasingSubsequence().getMaxSum(b, 4));
      }
 }

@@ -24,7 +24,7 @@ public class Ex06MaxSumIncreasingSubsequence {
     private int msis(int[] a, int n) {
         //create copy array to store max sum so far
         int[] t = Arrays.copyOf(a, n);
-        int max = 0;
+        int max = t[0];
         //i is for right side array starts from 1
         for(int i=1;i<n;i++){
             //j is left side array starts from 0
