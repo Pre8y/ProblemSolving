@@ -25,7 +25,8 @@ class Ex07LeaderTest {
     @Test
     void getLeader() {
         int[] a = {16, 17, 4, 3, 5, 2};
-        new Ex07Leader().getLeader(a, 6);
-        assertEquals("17 5 2 ", outputContent.toString());
+        int[] b = {16, 17, 17, 4, 3, 5, 2};
+        new Ex07Leader().getLeader(b, 7);
+        assertEquals("17 17 5 2 ", outputContent.toString());
     }
 }
