@@ -12,7 +12,7 @@ public class Ex07Leader {
         boolean[] b = new boolean[n];
         int leader = 0;
         for(int i=n-1; i>=0;i--){
-            if(a[i]>leader){
+            if(a[i]>=leader){
                 leader = a[i];
                 b[i] = true;
 
