@@ -22,14 +22,20 @@ Output:
 10
  0
  */
-public class TrappingRainWater {
+public class Ex12TrappingRainWater {
 
     public int getUnitOfWaterTrapped(int[] a, int count){
         int units = 0;
+        //left pointer right pointer
         int left = 0 , right = count-1;
+//        leftMax so far rightmax so far
         int leftMax = 0, rightMax = 0;
+        //start from both end and merge
         while(left<right){
+            //whatever no. is smaller process that first so that the bigger no will be able
+            //to form wall and hold on other side.
             if(a[left]<a[right]){
+                //either update left max or add count
                 if(a[left]>leftMax){
                     leftMax = a[left];
                 }else{
@@ -37,6 +43,7 @@ public class TrappingRainWater {
                 }
                 left++;
             }else{
+                //either update right max or add count
                if(a[right]>rightMax){
                    rightMax = a[right];
                } else{
