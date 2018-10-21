@@ -7,12 +7,19 @@ import java.util.List;
 
 public class ArrayRotationGame {
     List<Integer> getIndicesOfMax(List<Integer> a, List<Integer> rotate) {
+        int result = indexOfMax(a);
+        int size = a.size();
         List<Integer> indices = new ArrayList<>();
         for (int r: rotate) {
+            r=r%a.size();
             List<Integer> t = new ArrayList<>();
             t.addAll(a);
-            rotate(t, r);
-            indices.add( indexOfMax(t));
+//            rotate(t, r);
+            if(result-r>=0) {
+                indices.add(result - r);
+            }else{
+                indices.add(size+result - r);
+            }
         }
         return indices;
     }
@@ -37,4 +44,27 @@ public class ArrayRotationGame {
         }
         a.set(a.size()-1, temp);
     }
+
+
+    public int getConsSumWays(long n) {
+//        int i = 0;
+//        int j = 0;
+////        int sum[] = new int[n];
+//        int count = 0;
+//        while (j <= n) {
+//            int cur_sum = sum(j) - sum(i) + 1;
+//            if (cur_sum == n)
+//            count++;
+//            if( cur_sum <= n) {
+//                j++;
+//                sum += j;
+//            }
+//            if cur_sum >= N:
+//            sum -= i
+//            i++
+//        }
+//
+        return 0;
+    }
+
 }

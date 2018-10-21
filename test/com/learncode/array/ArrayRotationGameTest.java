@@ -24,4 +24,13 @@ class ArrayRotationGameTest {
         assertEquals(1, 1);
 //        assertArrayEquals(new int[]{1, 3}, res.toArray(new Integer[res.size()]));
     }
+
+    @Test
+    void getConsSumWays(){
+        assertEquals(3, new ArrayRotationGame().getConsSumWays(15));
+        assertEquals(1, new ArrayRotationGame().getConsSumWays(10));
+        assertEquals(3, new ArrayRotationGame().getConsSumWays(250));
+
+
+    }
 }
