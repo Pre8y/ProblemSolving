@@ -3,7 +3,7 @@ package com.learncode.dynamic_programming;
 /*
 https://www.techiedelight.com/longest-common-subsequence/
  */
-public class LongestCommonSubsequence {
+public class Ex02LongestCommonSubsequence {
     String getSubsequence(String a, String b, int m, int n) {
         int[][] t = new int[m+1][n+1];
 

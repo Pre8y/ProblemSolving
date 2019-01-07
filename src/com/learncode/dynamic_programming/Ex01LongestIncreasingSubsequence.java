@@ -12,7 +12,7 @@ Input : arr[] = {50, 3, 10, 7, 40, 80}
 Output : Length of LIS = 4
 The longest increasing subsequence is {3, 7, 40, 80}
  */
-public class LongestIncreasingSubsequence {
+public class Ex01LongestIncreasingSubsequence {
     int getLength(int[] a, int n){
         int length = 0;
         int[] t = new int[n];

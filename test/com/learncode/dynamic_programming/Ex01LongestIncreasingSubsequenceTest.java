@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LongestIncreasingSubsequenceTest {
+class Ex01LongestIncreasingSubsequenceTest {
 
     @Test
     void getLength() {
         int arr[] = {50, 3, 10, 7, 40, 80};
-        assertEquals(4, new LongestIncreasingSubsequence().getLength(arr, 6));
+        assertEquals(4, new Ex01LongestIncreasingSubsequence().getLength(arr, 6));
     }
 }

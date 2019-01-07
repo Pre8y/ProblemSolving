@@ -1,6 +1,6 @@
 package com.learncode.dynamic_programming;
 
-public class EditDistance {
+public class Ex05EditDistance {
     int getDistance(String a, String b , int m , int n){
         int[][] t =  new int[m+1][n+1];
 
