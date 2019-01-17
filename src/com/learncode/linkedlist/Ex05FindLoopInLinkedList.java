@@ -1,6 +1,6 @@
 package com.learncode.linkedlist;
 
-public class Ex02FindLoopInLinkedList<T> {
+public class Ex05FindLoopInLinkedList<T> {
 
     boolean isLoopExist(ExLinkedList<T> list){
         ExNode<T> slow = list.head, fast = list.head;

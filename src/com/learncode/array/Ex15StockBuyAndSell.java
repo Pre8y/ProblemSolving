@@ -1,5 +1,19 @@
 package com.learncode.array;
+/*
+The cost of stock on each day is given in an array A.
+Find all the days on which you buy and sell the stock so that
+in between those days you shouldn't have any loss.
+Input:
+2
+7
+100 180 260 310 40 535 695
+10
+23 13 25 29 33 19 34 45 65 67
 
+Output:
+(0 3) (4 6)
+(1 4) (5 9)
+ */
 public class Ex15StockBuyAndSell {
 
     String getDaysForMaxProfit(int[] a){

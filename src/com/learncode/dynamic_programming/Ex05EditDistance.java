@@ -1,5 +1,22 @@
 package com.learncode.dynamic_programming;
+/*
+Given two strings str1 and str2 and below operations
+that can performed on str1. Find minimum number of edits
+(operations) required to convert ‘str1′ into ‘str2′.
 
+Insert
+Remove
+Replace
+All of the above operations are of cost=1.
+Both the strings are of lowercase.
+Input:
+1
+4 5
+geek gesek
+
+Output:
+1
+ */
 public class Ex05EditDistance {
     int getDistance(String a, String b , int m , int n){
         int[][] t =  new int[m+1][n+1];

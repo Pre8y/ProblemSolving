@@ -1,5 +1,14 @@
 package com.learncode.array;
-
+/*
+Given an array of integers, write a function that returns true
+ if there is a triplet (a, b, c) that satisfies a2 + b2 = c2.
+ Input:
+1
+5
+3 2 4 6 5
+Output:
+true
+ */
 import java.util.Arrays;
 
 public class Ex13PythagoreanTriplet {

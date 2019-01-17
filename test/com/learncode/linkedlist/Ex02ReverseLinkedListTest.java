@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ReverseLinkedListTest {
+class Ex02ReverseLinkedListTest {
     static ByteArrayOutputStream outputContent = new ByteArrayOutputStream();
     static PrintStream outputStream = System.out;
     @BeforeAll
@@ -27,7 +27,7 @@ class ReverseLinkedListTest {
         list.insert(2);
         list.insert(3);
         list.insert(4);
-        list = new ReverseLinkedList<Integer>().reverse(list);
+        list = new Ex02ReverseLinkedList<Integer>().reverse(list);
         list.printList();
         assertEquals("4->3->2->1->", outputContent.toString());
 

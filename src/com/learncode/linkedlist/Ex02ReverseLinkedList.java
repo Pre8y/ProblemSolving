@@ -1,6 +1,6 @@
 package com.learncode.linkedlist;
 
-public class ReverseLinkedList<T> {
+public class Ex02ReverseLinkedList<T> {
     public ExLinkedList<T> reverse(ExLinkedList<T> list){
 
         if(list.isEmpty()) return list;

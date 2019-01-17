@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Ex02FindLoopInLinkedListTest {
+class Ex05FindLoopInLinkedListTest {
 
     @Test
     void isLoopExist() {
@@ -22,7 +22,7 @@ class Ex02FindLoopInLinkedListTest {
         eight.next = three;
         list.add(eight);
 
-        assertEquals(true, new Ex02FindLoopInLinkedList<Integer>().isLoopExist(list));
+        assertEquals(true, new Ex05FindLoopInLinkedList<Integer>().isLoopExist(list));
 
     }
 }

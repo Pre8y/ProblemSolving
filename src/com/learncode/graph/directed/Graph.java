@@ -46,12 +46,17 @@ public class Graph<T> {
         ArrayList<T> explored = new ArrayList<>();
         for(T node: nodes.keySet()){
             if(!visited.contains(node)){
-                if(isCyclic(node, visited, explored))
+                if(isCyclicUtil(node, visited, explored))
                     return true;
             }
         }
         return false;
 
+    }
+
+    private boolean isCyclicUtil(T node, ArrayList<T> visited, ArrayList<T> explored) {
+        if(explored.contains(node)) return true;
+        return false;
     }
 
     private boolean isCyclic(T node, ArrayList<T> visited, ArrayList<T> explored) {
